@@ -94,7 +94,11 @@ For each
 		N[0,F(x)\lbrace 1-F(x)\rbrace]
 \end{align*}
 
-where $F_n(x)$ is the empirical distribution function of an $iid$ sequence $\lbrace X_i\rbrace$ with cdf $F$.
+where
+\begin{math}
+	F_n(x)=\frac{1}{n} \sum_{i=1}^n \textbf{I} (X_i \leqslant x)
+\end{math}
+is the empirical distribution function of an $iid$ sequence $\lbrace X_i\rbrace$ with cdf $F$.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
