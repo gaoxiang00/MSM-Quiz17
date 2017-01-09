@@ -112,11 +112,17 @@ is the empirical distribution function of an $iid$ sequence $\lbrace X_i\rbrace$
 \begin{math}
 	i \in \mathbb{N}
 \end{math}
-.
+. So that
+\begin{math}
+	\bar{Y_n}
+		=\frac{1}{n}\sum_{i=1}^n Y_i 
+		=\frac{1}{n}\sum_{i=1}^n \textbf{I}(X_i \leqslant x)=F_n(x)
+\end{math}
+.\\
 \begin{math}
 	\lbrace Y_i \rbrace 
 \end{math}
-is therefore also an $iid$ sequence, since $\lbrace Y_i \rbrace$ is $iid$ and indicate function is measurable, and
+is therefore also an $iid$ sequence, since $\lbrace X_i \rbrace$ is $iid$ and indicate function is measurable, and
 \end{itemize}
 \begin{align*}
 	E[Y_i]
@@ -142,12 +148,6 @@ is therefore also an $iid$ sequence, since $\lbrace Y_i \rbrace$ is $iid$ and in
 \begin{align*}
 	\sqrt{n} (\bar{Y_n}-F(x))
 		= \sqrt{n}(F_n(x)-F(x)) \overset{\mathcal{L}}{\to} N(0,F(x)(1-F(x))
-\end{align*}
-where
-\begin{align*}
-	\bar{Y_n}
-		=\frac{1}{n}\sum_{i=1}^n Y_i 
-		=\frac{1}{n}\sum_{i=1}^n \textbf{I}(X_i \leqslant x)=F_n(x)
 \end{align*}
 
 \end{enumerate}
